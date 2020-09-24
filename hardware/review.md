@@ -2,13 +2,13 @@
 
 ## Hardware
 The Machreator LF35 laptop that I bought comes with the following specs:
-- 10 generation Intel [i5-10210U](https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html) (4 cores, 8 thread)
+- 10 generation Intel [i5-10210U][1] (4 cores, 8 thread)
 - Intel UHD Graphics
-- [NVidia MX350](https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/)
-- Intel [WiFi-6 AX201](https://ark.intel.com/content/www/us/en/ark/products/130293/intel-wi-fi-6-ax201-gig.html) (Wireless-AC 9462)
+- [NVidia MX350][2]
+- Intel [WiFi-6 AX201][3] (Wireless-AC 9462)
 - 8GB DDR4 SODIMM (Tigo)
 - 512GB M2 NVME (Kimtigo)
-- 15 inch 120 hz 1080P IPS Panel ([BOE](https://www.boe.com/en/about/boeqq/)
+- 15 inch 120 hz 1080P IPS Panel ([BOE][4])
 - Backlight keyboard
 - Chicony WebCam (defaults to 640 x 480, but it looks like it can do 1280 x 720)
 - Ports:
@@ -27,9 +27,11 @@ The laptop only comes in silver, though in person it looks more like dark grey t
 I like the design, the muted color and simple logo at the back with no bling makes this a professional looking laptop. It feels very sturdy, especially the deck. What lets it down in my opinion is the cheap looking B panel (the bezel on the screen) perhaps changing the color to matte black instead of the same color as body would have made it look more premium.
 
 ## Keyboard and Trackpad
-The keyboard has good travel and are quite large and has good spacing between them. This makes it easier to type on them and makes it harder to make mistakes while typing. It is backlit with 2 levels of brightness which can be adjusted by pressing FN + <Space Bar>. Arrow keys are large and not compressed as on some other laptops. The keys are smooth and quite prone to finger prints, they also wobble a bit but do not feel loose.  
+The keyboard has good travel and are quite large and has good spacing between them. This makes it easier to type on them and makes it harder to make mistakes while typing. It is backlit with 2 levels of brightness which can be adjusted by pressing FN + \<Space Bar\>. Arrow keys are large and not compressed as on some other laptops. The keys are smooth and quite prone to finger prints, they also wobble a bit but do not feel loose.  
 
 The trackpad is of decent size and it came with Microsoft precision drivers. There are no physical buttons but the track pad itself can be depressed. It is of decent size, not as big as a Macbook but not as small as some old Thinkpads.
 
-
-
+[1]: https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html
+[2]: https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/
+[3]: https://ark.intel.com/content/www/us/en/ark/products/130293/intel-wi-fi-6-ax201-gig.html
+[4]: https://www.boe.com/en/about/boeqq/
