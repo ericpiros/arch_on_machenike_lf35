@@ -66,9 +66,27 @@ The laptop comes with a 1080P IPS screen. Below is a truncated output of the xra
 
 Marketing materials for the latop claim that it supports 120hz and based on the output it does look like it does. Personally I do not see any difference in the screen, though is most likely due to me using i3 so there aren't that much animation on my screen. I have not done a thorough test on  games to see any difference either.  
 
-My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chon or nose depending on the angle of the screen.
+My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chon or nose depending on the angle of the screen.  
+
+## Sound
+It comes with Intel audio and down firing speakers. The sound is very weak on the laptop and is especially noticeable on Linux. I had to boost the audio using Gnome to make the sound loud enough to be useable. It has support for [Nahimic][5] if you are running Windows, you might want to install the drivers. `lspci` output below:  
+>00:1f.3 Audio device: Intel Corporation Device 02c8 (prog-if 80)
+>	DeviceName: Onboard - Sound
+>	Subsystem: Pegatron Device 2462
+>	Flags: bus master, fast devsel, latency 32, IRQ 149
+>	Memory at c4318000 (64-bit, non-prefetchable) [size=16K]
+>	Memory at c4100000 (64-bit, non-prefetchable) [size=1M]
+>	Capabilities: [50] Power Management version 3
+>	Capabilities: [80] Vendor Specific Information: Len=14 <?>
+>	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+
+>	Kernel driver in use: sof-audio-pci
+>	Kernel modules: snd_hda_intel, snd_sof_pci
+
+
+## Battery
 
 [1]: https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html
 [2]: https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/
 [3]: https://ark.intel.com/content/www/us/en/ark/products/130293/intel-wi-fi-6-ax201-gig.html
 [4]: https://www.boe.com/en/about/boeqq/
+[5]: https://www.nahimic.com
