@@ -33,36 +33,36 @@ The trackpad is of decent size and it came with Microsoft precision drivers. The
 
 ## Screen
 The laptop comes with a 1080P IPS screen. Below is a truncated output of the xrandr --verbose output:
->Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 16384 x 16384
->eDP-1 connected primary 1920x1080+0+0 (0x48) normal (normal left inverted right x axis y axis) 344mm x 194mm
->	Identifier: 0x42
->	Timestamp:  107689
->	Subpixel:   unknown
->	Gamma:      1.0:1.0:1.0
->	Brightness: 1.0
->	Clones:    
->	CRTC:       0
->	CRTCs:      0 1 2
->	Transform:  1.000000 0.000000 0.000000
->	            0.000000 1.000000 0.000000
->	            0.000000 0.000000 1.000000
->	           filter: 
->	EDID: 
->		00ffffffffffff0009e5000700000000
->		011a0104a522137802c9a0955d599429
->		24505400000001010101010101010101
->		0101010101019c3b803671383c403020
->		360058c21000001a0000000000000000
->		00000000000000000000000000fe0042
->		4f452043510a202020202020000000fe
->		004e5631353646484d2d4e34380a007c
+>Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 16384 x 16384  
+>eDP-1 connected primary 1920x1080+0+0 (0x48) normal (normal left inverted right x axis y axis) 344mm x 194mm  
+>	Identifier: 0x42  
+>	Timestamp:  107689  
+>	Subpixel:   unknown  
+>	Gamma:      1.0:1.0:1.0  
+>	Brightness: 1.0  
+>	Clones:      
+>	CRTC:       0  
+>	CRTCs:      0 1 2  
+>	Transform:  1.000000 0.000000 0.000000  
+>	            0.000000 1.000000 0.000000  
+>	            0.000000 0.000000 1.000000  
+>	           filter:   
+>	EDID:   
+>		00ffffffffffff0009e5000700000000  
+>		011a0104a522137802c9a0955d599429  
+>		24505400000001010101010101010101  
+>		0101010101019c3b803671383c403020  
+>		360058c21000001a0000000000000000  
+>		00000000000000000000000000fe0042  
+>		4f452043510a202020202020000000fe  
+>		004e5631353646484d2d4e34380a007c  
 
->  1920x1080 (0x47) 152.600MHz +HSync -VSync +preferred
->        h: width  1920 start 1968 end 2000 total 2230 skew    0 clock  68.43KHz
->        v: height 1080 start 1083 end 1089 total 1140           clock  60.03Hz
->  1920x1080 (0x48) 356.375MHz -HSync +VSync DoubleScan *current
->        h: width  1920 start 2080 end 2288 total 2656 skew    0 clock 134.18KHz
->        v: height 1080 start 1081 end 1084 total 1118           clock  60.01Hz
+>  1920x1080 (0x47) 152.600MHz +HSync -VSync +preferred  
+>        h: width  1920 start 1968 end 2000 total 2230 skew    0 clock  68.43KHz  
+>        v: height 1080 start 1083 end 1089 total 1140           clock  60.03Hz  
+>  1920x1080 (0x48) 356.375MHz -HSync +VSync DoubleScan *current  
+>        h: width  1920 start 2080 end 2288 total 2656 skew    0 clock 134.18KHz  
+>        v: height 1080 start 1081 end 1084 total 1118           clock  60.01Hz  
 
 Marketing materials for the latop claim that it supports 120hz and based on the output it does look like it does. Personally I do not see any difference in the screen, though is most likely due to me using i3 so there aren't that much animation on my screen. I have not done a thorough test on  games to see any difference either.  
 
@@ -70,17 +70,17 @@ My screen came with some bad backlight bleeding on the corners, but it does not 
 
 ## Sound
 It comes with Intel audio and down firing speakers. The sound is very weak on the laptop and is especially noticeable on Linux. I had to boost the audio using Gnome to make the sound loud enough to be useable. It has support for [Nahimic][5] if you are running Windows, you might want to install the drivers. `lspci` output below:  
->00:1f.3 Audio device: Intel Corporation Device 02c8 (prog-if 80)
->	DeviceName: Onboard - Sound
->	Subsystem: Pegatron Device 2462
->	Flags: bus master, fast devsel, latency 32, IRQ 149
->	Memory at c4318000 (64-bit, non-prefetchable) [size=16K]
->	Memory at c4100000 (64-bit, non-prefetchable) [size=1M]
->	Capabilities: [50] Power Management version 3
->	Capabilities: [80] Vendor Specific Information: Len=14 <?>
->	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+
->	Kernel driver in use: sof-audio-pci
->	Kernel modules: snd_hda_intel, snd_sof_pci
+>00:1f.3 Audio device: Intel Corporation Device 02c8 (prog-if 80)  
+>	DeviceName: Onboard - Sound  
+>	Subsystem: Pegatron Device 2462  
+>	Flags: bus master, fast devsel, latency 32, IRQ 149  
+>	Memory at c4318000 (64-bit, non-prefetchable) [size=16K]  
+>	Memory at c4100000 (64-bit, non-prefetchable) [size=1M]  
+>	Capabilities: [50] Power Management version 3  
+>	Capabilities: [80] Vendor Specific Information: Len=14 <?>  
+>	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+  
+>	Kernel driver in use: sof-audio-pci  
+>	Kernel modules: snd_hda_intel, snd_sof_pci  
 
 
 ## Battery
