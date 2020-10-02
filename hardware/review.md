@@ -107,11 +107,9 @@ I ran the following benchmark software to test the processor and video card:
 
 ### CPU
 For CPU I ran GeekBench and got the following results:
-|Test             |Single Core Score | Multi-Core Score |
+|Benchmark        |Single Core Score | Multi-Core Score |
 |-----------------|------------------|------------------|
 |[GeekBench][10]  |        1039      |       3594       |
-
-Temps during the run follow:  
 
 
 For something more practical and closer to what I am using the laptop for, Phoronix has a build Linux kernel test. Running the benchmark I got the following:  
@@ -128,6 +126,36 @@ Temperatures on both test reached and sometimes breach 90C, though as can be see
 
 ![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)
 
+### Graphics
+The Nvidia MX350 is not really much of a powerhouse of a card, it does get the job done on games that do not require advanced graphic capabilitues. Having a discrete Nvidia GPU also means that the laptop can use CUDA.  
+
+To test out how CUDA performs on the MX350, I ran a [Blender bencmark][9]. I specifically ran the BMW test.
+
+|Benchmark   | Render Time |
+|------------|-------------|
+|Blender BMW |    8m52s    |
+
+![Blender BMW27 Test](./pictures/blender_bmw_benchmark.png)
+
+For reference a [RTX 2080TI][11] can render the same test at 40.82s.
+
+
+To see how it would perform running a game engine, I ran Phoronix's Unigine Heaven benchmark and got the following results:
+
+|Benchmark           |Frames Per Second |
+|--------------------|------------------|
+|Unigine Heaven v4.0 |       26         |
+
+The test was run fullscreen at 1080P. For reference a RTX 2070 can get on average 119FPS for the same test.
+
+Temps were high for the graphics card, especially on the Unigine Heaven test where it reached 97C. As with the CPU tests, temps went down quite significantly after the tests completed.
+
+![Blender BMW27 Temps](./pictures/blender_bmw_benchmark_temps.png)
+
+![Unigine Heaven v4.0](./pictures/phoronix_unigine_1080p_temps.png)
+
+Overall it looks like the heatpipe and single fan can easily cool off the CPU and GPU after the load goes down. However during peak usage it seems to struggle as the temps seem to be in the high 80s to 90s. I think reapplying the thermal paste and using a laptop coller seems be necessary if you will be pushing this laptop a lot.
+
 [1]: https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html
 [2]: https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/
 [3]: https://ark.intel.com/content/www/us/en/ark/products/130293/intel-wi-fi-6-ax201-gig.html
@@ -138,3 +166,4 @@ Temperatures on both test reached and sometimes breach 90C, though as can be see
 [8]: https://opendata.blender.org
 [9]: https://www.phoronix-test-suite.com/?k=downloads
 [10]: https://www.phoronix-test-suite.com/?k=downloads
+[11]: https://opendata.blender.org/benchmarks/query/?device_name=GeForce RTX 2080 Ti&device_type=CUDA&os=Linux&benchmark=bmw27&blender_version=2.90
