@@ -166,4 +166,4 @@ Overall it looks like the heatpipe and single fan can easily cool off the CPU an
 [8]: https://opendata.blender.org
 [9]: https://www.phoronix-test-suite.com/?k=downloads
 [10]: https://www.phoronix-test-suite.com/?k=downloads
-[11]: https://opendata.blender.org/benchmarks/query/?device_name=GeForce RTX 2080 Ti&device_type=CUDA&os=Linux&benchmark=bmw27&blender_version=2.90
+[11]: "https://opendata.blender.org/benchmarks/query/?device_name=GeForce RTX 2080 Ti&device_type=CUDA&os=Linux&benchmark=bmw27&blender_version=2.90"
