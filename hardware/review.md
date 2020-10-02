@@ -66,6 +66,8 @@ The laptop comes with a 1080P IPS screen. Below is a truncated output of the xra
 
 Marketing materials for the latop claim that it supports 120hz and based on the output it does look like it does. Personally I do not see any difference in the screen, though is most likely due to me using i3 so there aren't that much animation on my screen. I have not done a thorough test on  games to see any difference either.  
 
+You can also connect it to an external monitor through the HDMI port (sadly only version 1.4 so you can only output to 4K @ 30hz) or through the USB-C port by a USB-C to dsplay port or USB-C to HDMI port converter. The USB-C supports 4K @ 60Hz.
+
 My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chon or nose depending on the angle of the screen.  
 
 ## Sound
@@ -84,9 +86,55 @@ It comes with Intel audio and down firing speakers. The sound is very weak on th
 
 
 ## Battery
+The laptop comes with a 41WH battery. Marketing materials claim that the laptop can last up to 9 hours, but realistically I can get 4 bours out of it. I have not tested the battery while running Windows. The laptop offers an office mode which claims to disable the discrete GPU which can prolong the life of the laptop. This can be accessed py pressing FN + \<3\>. This does not seem to work in Linux. Of the the 3 special FN button combination that it offers:  
+  
+- FN + \<1\> - Turn fan speed to max.
+- FN + \<3\> - Office mode.
+- FN + \<4\> - Game mode.  
+
+Only the fan speed combination seems to work in Linux.  
+  
+A [19V 65W power brick][6] with a standard barrel connector comes with the laptop. It is quite compact. Charging time is about 2 hours to get to 100%. The laptop can also be charged using the USB-C port, though you will need a 65W USB-C charger to be able to sustain a charge. It comes with an HK style plug by default but the seller included the appropriate plug for my country in the package.
+
+## Performance
+The processor is good for my usage pattern of running virtual machines (through VMWare Player and VirtualBox), watching videos through the browser and coding using VS Code. Temperatures while on my normal usage hover at 50C (this is without reapplying thermal paste).  
+
+
+I ran the following benchmark software to test the processor and video card:  
+- [GeekBench][7]  
+- [Blender Benchmark][8]  
+- [Phoronix Test Suite][9]  
+
+### CPU
+For CPU I ran GeekBench and got the following results:
+|Test             |Single Core Score | Multi-Core Score |
+|-----------------|------------------|------------------|
+|[GeekBench][10]  |        1039      |       3594       |
+
+Temps during the run follow:  
+
+
+For something more practical and closer to what I am using the laptop for, Phoronix has a build Linux kernel test. Running the benchmark I got the following:  
+
+|Benchmark                          |Average Time (S)|
+|-----------------------------------|----------------|
+|Timed Linux Kernel Compilation v5.4|     333.48     |
+
+For comparison an AMD Ryzen Threadripper 2990WX can complete the test in 40.37s.  
+
+Temperatures on both test reached and sometimes breach 90C, though as can be seen on the screenshots below, it quickly dropped to 60C after the tests completed.
+
+![GeekBench Temps](./pictures/geekbench_temp.png)
+
+![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)
 
 [1]: https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html
 [2]: https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/
 [3]: https://ark.intel.com/content/www/us/en/ark/products/130293/intel-wi-fi-6-ax201-gig.html
 [4]: https://www.boe.com/en/about/boeqq/
 [5]: https://www.nahimic.com
+[6]: https://www.digikey.com/product-detail/en/delta-electronics/ADP-65JH-HBAN/1145-1140-ND/5250424
+[7]: https://www.geekbench.com/download/linux/
+[8]: https://opendata.blender.org
+[9]: https://www.phoronix-test-suite.com/?k=downloads
+[10]: https://www.phoronix-test-suite.com/?k=downloads
