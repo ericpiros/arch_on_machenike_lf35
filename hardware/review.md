@@ -121,7 +121,7 @@ Marketing materials for the latop claim that it supports 120hz and based on the 
 
 You can also connect it to an external monitor through the HDMI port (sadly only version 1.4 so you can only output to 4K @ 30hz) or through the USB-C port by a USB-C to dsplay port or USB-C to HDMI port converter. The USB-C supports 4K @ 60Hz.
 
-My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chon or nose depending on the angle of the screen.  
+My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chin or nose depending on the angle of the screen.  
 
 ![Backlight Bleeding](./pictures/lf3f_screen_bleed.jpg)
 
