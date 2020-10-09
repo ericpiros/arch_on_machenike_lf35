@@ -73,7 +73,7 @@ You get 4 tabs; Main, Advanced, Security and Boot. Main contains information abo
  
 Security allows you to set an administrator password, enable/disable secureboot, enable/disable TPM and configure SGX. Boot allows you to set the boot order of the laptop (yes I know I have to clean up my boot entries).  
 
-|Security                                      |                                      |
+|Security                                      |Boot                                  |
 |----------------------------------------------|--------------------------------------|
 |![BIOS Security](./pictures/bios_security.jpg)|![BIOS Boot](./pictures/bios_boot.jpg)|  
 
