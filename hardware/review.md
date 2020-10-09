@@ -18,16 +18,56 @@ The Machreator LF35 laptop that I bought comes with the following specs:
 	- 1 x 3.5mm combo mic/speaker jack
 	- 1 x SD Card reader
 	- 1 x Barrel plug charger
+|Top Panel                                |Profile                                       |Bottom Panel                                |
+|-----------------------------------------|----------------------------------------------|--------------------------------------------|
+|![Top Panel](./pictures/lf35_a_panel.jpg)|![Profile View](./lf35_profile_screen_off.jpg)|![Bottom Panel](./pictures/lf35_d_panel.jpg)| 
 
 The laptop comes with 1 NVME and 1 SATA 3 port. It also has 2 DDR4 RAM slots. The WiFi card is also replaceable. It comes with a 41WH battery.
+
+|Battery                                      |WiFi                                        |
+|---------------------------------------------|--------------------------------------------|
+|![41WH Battery](./pictures/lf_35_battery.jpg)|![Intel WiFi](./pictures/lf35_wifi_card.jpg)|
 
 ## Design
 The laptop only comes in silver, though in person it looks more like dark grey than what is on the promotional pictures. The A, C and D panels are made of metal while the B panel is plastic. The top panel has 2 character lines on both edges and the Machreator logo is embossed dead center. This gives it an unassuming look and is quite muted compared to the company's other offerings. The lid opens up to 120 degress, being able to open it to 180 degress would have been nice. The underside has 2 small rubber feet in front and a long one at the back, this makes sure that the laptop is elevated from the surface. It also has a row of ventilation slits right over the fan all the way to the RAM slots.  
 
+![Macbook Air Vs LF35](./pictures/macbook_air_vs_lf35_color_comparison.jpg)  
+
 I like the design, the muted color and simple logo at the back with no bling makes this a professional looking laptop. It feels very sturdy, especially the deck. What lets it down in my opinion is the cheap looking B panel (the bezel on the screen) perhaps changing the color to matte black instead of the same color as body would have made it look more premium.
+
+## Upgrades
+To open up the laptop, you will need to remove 10 philips head screws on the underside of the laptop. These screws are hidden under rubber gromets which you will have to peel off to be able to access them. Once the screws are off, it is quite easy to pry the bottom panel open with a pick.  
+
+![Rubber Gromets](./pictures/lf35_rubber_gromets)
+
+Inside you will have access to the following upgradeable components:
+- NVME drive
+- SATA3 drive
+- 2 RAM slots
+- WiFi card
+
+![LF35 Internals](./pictures/lf35_internals.jpg)
+
+The NVME drive has a heat shroud on it. Take note that there is a ribbon cable from the motherboard going to a separate PCB which houses the right side connectors (SD card slow, 1 X USB 3 and the Mic/Headphone jack) taped on top of the shroud. Take care in removing this as you do not want to loose connectivity to those ports.  
+
+![Default Drives and RAM](./pictures/lf35_default_mem_ssd)
+
+If you want to use a SATA3 drive, you will need to use the included HDD rack and SATA connector. These are included in box along with the manuals, so do not throw that away if you plan on adding another HDD in the future.  
+
+You can see that the laptop has 2 heatpipes and single fan on the unit.
+
+I replaced the included NVME drive and 8GB memory stick with the following:
+- 2 X Corsair Vengeance 16GB DDR4 sticks
+- 1TB Samsung 970 EVO Plus
+- 2TB Samsung 860 QVO
+
+## BIOS
+The laptop came with AMI BIOS version . There really isn't much on it and is pretty much bare bones.
 
 ## Keyboard and Trackpad
 The keyboard has good travel and are quite large and has good spacing between them. This makes it easier to type on them and makes it harder to make mistakes while typing. It is backlit with 2 levels of brightness which can be adjusted by pressing FN + \<Space Bar\>. Arrow keys are large and not compressed as on some other laptops. The keys are smooth and quite prone to finger prints, they also wobble a bit but do not feel loose.  
+
+![Profile View Screen On](./pictures/lf35_profile_screen_on.jpg)
 
 The trackpad is of decent size and it came with Microsoft precision drivers. There are no physical buttons but the track pad itself can be depressed. It is of decent size, not as big as a Macbook but not as small as some old Thinkpads.
 
@@ -69,6 +109,8 @@ Marketing materials for the latop claim that it supports 120hz and based on the 
 You can also connect it to an external monitor through the HDMI port (sadly only version 1.4 so you can only output to 4K @ 30hz) or through the USB-C port by a USB-C to dsplay port or USB-C to HDMI port converter. The USB-C supports 4K @ 60Hz.
 
 My screen came with some bad backlight bleeding on the corners, but it does not detract when you are on the desktop or playing a game. It is a different story when you only have a black screen in front of you (visible on the splash screen as your OS boots). The bezels on the screen are narrow which is a nice touch, makes the laptop look modern. It does have a large chin though with the MACHREATOR name on it and the camera. The camera is serviceable. It won't wow anyone and the placement leaves a lot to be desired being so low in the screen. It is either pointing at your chon or nose depending on the angle of the screen.  
+
+![Backlight Bleeding](./pictures/lf3f_screen_bleed.jpg)
 
 ## Sound
 It comes with Intel audio and down firing speakers. The sound is very weak on the laptop and is especially noticeable on Linux. I had to boost the audio using Gnome to make the sound loud enough to be useable. It has support for [Nahimic][5] if you are running Windows, you might want to install the drivers. `lspci` output below:  
@@ -122,7 +164,9 @@ For comparison an AMD Ryzen Threadripper 2990WX can complete the test in 40.37s.
 
 Temperatures on both test reached and sometimes breach 90C, though as can be seen on the screenshots below, it quickly dropped to 60C after the tests completed.
 
-![GeekBench Temps](./pictures/geekbench_temp.png)
+|GeekBench Temps                                  |Phoronix Linux Kernel Compile Test                                               |
+|-------------------------------------------------|---------------------------------------------------------------------------------|
+|![GeekBench Temps](./pictures/geekbench_temp.png)|![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)|
 
 ![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)
 
@@ -150,11 +194,20 @@ The test was run fullscreen at 1080P. For reference a RTX 2070 can get on averag
 
 Temps were high for the graphics card, especially on the Unigine Heaven test where it reached 97C. As with the CPU tests, temps went down quite significantly after the tests completed.
 
-![Blender BMW27 Temps](./pictures/blender_bmw_benchmark_temps.png)
+|Blender BMW27 Temps                                               |Unigine Heaven v4.0 Temps                                          |
+|------------------------------------------------------------------|-------------------------------------------------------------------|
+|![Blender BMW27 Temps](./pictures/blender_bmw_benchmark_temps.png)|![Unigine Heaven v4.0](./pictures/phoronix_unigine_1080p_temps.png)|
 
-![Unigine Heaven v4.0](./pictures/phoronix_unigine_1080p_temps.png)
 
-Overall it looks like the heatpipe and single fan can easily cool off the CPU and GPU after the load goes down. However during peak usage it seems to struggle as the temps seem to be in the high 80s to 90s. I think reapplying the thermal paste and using a laptop coller seems be necessary if you will be pushing this laptop a lot.
+Overall it looks like the heatpipe and single fan can easily cool off the CPU and GPU after the load goes down. However during peak usage it seems to struggle as the temps seem to be in the high 80s to 90s. I think reapplying the thermal paste and using a laptop coller seems be necessary if you will be pushing this laptop a lot.  
+
+Despite the high temperatures, the keyboard and palm rest areas of the laptop remain relatively warm to touch. It is a different story with the underside and area above the keyboard. You definitely do not want to be touching those areas when doing heavy gaming.  
+
+## Conclusion
+For it's retail price of [45,999PHP][12], the Machreator LF35 is not a good laptop. At that price point you can get latops with a better camera, speaker or cooling. However on it's sale price of 36,998PHP, it cannot be beat with the specs that it offers. Add to that the ability to upgrade the storage and memory and you can definitely prolong the useful life of the laptop.  
+
+I would not recommend it those who do not have a secondary device, as the nearest service center is in Hong Kong. So you will be without a laptop for a few weeks if you do decide to claim the warranty.
+
 
 [1]: https://ark.intel.com/content/www/us/en/ark/products/195436/intel-core-i5-10210u-processor-6m-cache-up-to-4-20-ghz.html
 [2]: https://www.nvidia.com/en-us/geforce/gaming-laptops/mx-350/
@@ -166,4 +219,5 @@ Overall it looks like the heatpipe and single fan can easily cool off the CPU an
 [8]: https://opendata.blender.org
 [9]: https://www.phoronix-test-suite.com/?k=downloads
 [10]: https://www.phoronix-test-suite.com/?k=downloads
-[11]: "https://opendata.blender.org/benchmarks/query/?device_name=GeForce RTX 2080 Ti&device_type=CUDA&os=Linux&benchmark=bmw27&blender_version=2.90"
+[11]: https://opendata.blender.org/benchmarks/query/?device_name=GeForce%20RTX%202080%20Ti&device_type=CUDA&os=Linux&benchmark=bmw27&blender_version=2.90
+[12]: https://www.lazada.com.ph/products/new-arrivalmachenike-lf35-10th-generation-intel-core-i5-thin-and-light-i5-10210u-nvidia-mx350-graphics-156-inch-full-screen-business-office-student-gaming-laptop-free-warranty-free-gifts-windows-10-best-laptop-2020-i681186641-s1956986420.html?spm=a2o4l.seller.list.82.5d8a6939h4mko7&mp=1
