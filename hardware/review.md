@@ -17,7 +17,8 @@ The Machreator LF35 laptop that I bought comes with the following specs:
 	- 1 x USB-C (supports charging and display output)
 	- 1 x 3.5mm combo mic/speaker jack
 	- 1 x SD Card reader
-	- 1 x Barrel plug charger
+	- 1 x Barrel plug charger  
+	
 |Top Panel                                |Profile                                       |Bottom Panel                                |
 |-----------------------------------------|----------------------------------------------|--------------------------------------------|
 |![Top Panel](./pictures/lf35_a_panel.jpg)|![Profile View](./lf35_profile_screen_off.jpg)|![Bottom Panel](./pictures/lf35_d_panel.jpg)| 
@@ -38,7 +39,7 @@ I like the design, the muted color and simple logo at the back with no bling mak
 ## Upgrades
 To open up the laptop, you will need to remove 10 philips head screws on the underside of the laptop. These screws are hidden under rubber gromets which you will have to peel off to be able to access them. Once the screws are off, it is quite easy to pry the bottom panel open with a pick.  
 
-![Rubber Gromets](./pictures/lf35_rubber_gromets)
+![Rubber Gromets](./pictures/lf35_rubber_gromets.jpg)
 
 Inside you will have access to the following upgradeable components:
 - NVME drive
@@ -50,7 +51,7 @@ Inside you will have access to the following upgradeable components:
 
 The NVME drive has a heat shroud on it. Take note that there is a ribbon cable from the motherboard going to a separate PCB which houses the right side connectors (SD card slow, 1 X USB 3 and the Mic/Headphone jack) taped on top of the shroud. Take care in removing this as you do not want to loose connectivity to those ports.  
 
-![Default Drives and RAM](./pictures/lf35_default_mem_ssd)
+![Default Drives and RAM](./pictures/lf35_default_mem_ssd.jpg)
 
 If you want to use a SATA3 drive, you will need to use the included HDD rack and SATA connector. These are included in box along with the manuals, so do not throw that away if you plan on adding another HDD in the future.  
 
@@ -62,7 +63,19 @@ I replaced the included NVME drive and 8GB memory stick with the following:
 - 2TB Samsung 860 QVO
 
 ## BIOS
-The laptop came with AMI BIOS version . There really isn't much on it and is pretty much bare bones.
+The laptop came with AMI BIOS version 2.20.1275. There really isn't much on it and is pretty much bare bones.  
+
+You get 4 tabs; Main, Advanced, Security and Boot. Main contains information about the laptop. The only thing you can adjust here is the data and time. Under Advanced you can enable/disable virtualization and enable/disable Intel Optane for the hard drives.  
+
+|Main                                  |Advanced                                      |
+|--------------------------------------|----------------------------------------------|
+|![BIOS Main](./pictures/bios_main.jpg)|![BIOS Advanced](./pictures/bios_advanced.jpg)|  
+ 
+Security allows you to set an administrator password, enable/disable secureboot, enable/disable TPM and configure SGX. Boot allows you to set the boot order of the laptop (yes I know I have to clean up my boot entries).  
+
+|Security                                      |                                      |
+|----------------------------------------------|--------------------------------------|
+|![BIOS Security](./pictures/bios_security.jpg)|![BIOS Boot](./pictures/bios_boot.jpg)|  
 
 ## Keyboard and Trackpad
 The keyboard has good travel and are quite large and has good spacing between them. This makes it easier to type on them and makes it harder to make mistakes while typing. It is backlit with 2 levels of brightness which can be adjusted by pressing FN + \<Space Bar\>. Arrow keys are large and not compressed as on some other laptops. The keys are smooth and quite prone to finger prints, they also wobble a bit but do not feel loose.  
@@ -168,7 +181,6 @@ Temperatures on both test reached and sometimes breach 90C, though as can be see
 |-------------------------------------------------|---------------------------------------------------------------------------------|
 |![GeekBench Temps](./pictures/geekbench_temp.png)|![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)|
 
-![Timed Linux Compilation v5.4](./pictures/phoronix_linux_kernel_build_temps.png)
 
 ### Graphics
 The Nvidia MX350 is not really much of a powerhouse of a card, it does get the job done on games that do not require advanced graphic capabilitues. Having a discrete Nvidia GPU also means that the laptop can use CUDA.  
