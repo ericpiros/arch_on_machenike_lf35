@@ -19,9 +19,9 @@ The Machreator LF35 laptop that I bought comes with the following specs:
 	- 1 x SD Card reader
 	- 1 x Barrel plug charger  
 	
-|Top Panel                                |Profile                                       |Bottom Panel                                |
-|-----------------------------------------|----------------------------------------------|--------------------------------------------|
-|![Top Panel](./pictures/lf35_a_panel.jpg)|![Profile View](./lf35_profile_screen_off.jpg)|![Bottom Panel](./pictures/lf35_d_panel.jpg)| 
+|Top Panel                                |Profile                                                |Bottom Panel                                |
+|-----------------------------------------|-------------------------------------------------------|--------------------------------------------|
+|![Top Panel](./pictures/lf35_a_panel.jpg)|![Profile View](./pictures/lf35_profile_screen_off.jpg)|![Bottom Panel](./pictures/lf35_d_panel.jpg)| 
 
 The laptop comes with 1 NVME and 1 SATA 3 port. It also has 2 DDR4 RAM slots. The WiFi card is also replaceable. It comes with a 41WH battery.
 
