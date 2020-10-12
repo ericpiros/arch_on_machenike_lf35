@@ -7,8 +7,7 @@ I am currently running [Pop!_OS][3] 20.04 on it with my end goal to install and 
 
 ## Sections
 1. [Hardware](./hardware/review.md)
-2. [Pop!_OS](.popos/review.md)
-3. [Installation of Arch](./arch/why_arch.md)
+2. [Installation of Arch](./arch/README.md)
 
 [1]: https://www.machenike.com/product/67.html
 [2]: https://www.machenike.com
