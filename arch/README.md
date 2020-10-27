@@ -29,16 +29,16 @@ For the Machreator LF35, I have to press the ESC key during the start up secquen
 
 The latop does not come with an ethernet port, so I will have to connect to my WiFi to get internet. When you boot into the Arch installer you get a message on how to connect to your WiFi. As indicated in the screen, we will use 'iwctl' to connect. Running the command drops you to a prompt:
 
-[iwd]#
-
+>[iwd]#  
+  
 Here we type in device list to get a list wireless devices. Hopefully your WiFi card will be detected and listed. In my case, the Intel WiFi card got detected and was assigned to wlan0. We can then run the following command to get a list of available networks.
 
-[iwd]# station <network device> scan
-[iwd]# station <network device> get-networks
+>[iwd]# station <network device> scan  
+>[iwd]# station <network device> get-networks  
 
 Once you see your WiFi network run the following to connect to it:  
 
-[iwd]# station <network device> connect <SSID>
+>[iwd]# station <network device> connect <SSID>  
 
 You will be prompted for the password. Once connected you can type in exit to return to the command prompt.  
 
